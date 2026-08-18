@@ -1,0 +1,17 @@
+# Optional convenience: `docker compose up -d` gives you a local Postgres
+# instance matching server/.env.example without installing Postgres directly.
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: geopulse
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - geopulse_pgdata:/var/lib/postgresql/data
+
+volumes:
+  geopulse_pgdata:
