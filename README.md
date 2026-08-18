@@ -4,8 +4,7 @@ A full-stack, map-first dashboard for exploring US wildfire incident data:
 filter by date/category/severity, watch the map and the on-screen stats
 update live as you pan and zoom, and click any incident for full detail.
 
-Built to demonstrate the specific stack a **Sr. Software Development Engineer
-— Web Developer** role at Esri requires: **ArcGIS Maps SDK for JavaScript**,
+**ArcGIS Maps SDK for JavaScript**,
 the **Calcite Design System**, **React + TypeScript**, REST API design, and
 **PostgreSQL**.
 
