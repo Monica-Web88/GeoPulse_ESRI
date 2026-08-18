@@ -142,20 +142,6 @@ esriConfig.apiKey = "YOUR_KEY_HERE";
 | `GET /api/incidents` | GeoJSON `FeatureCollection`. Filters: `startDate`, `endDate`, `category`, `severity` |
 | `GET /api/incidents/stats` | Aggregate counts by severity/category + totals. Same filters, plus `bbox` |
 
-## What I'd do with more time
-
-- **Auth** — none currently; a real deployment would put write endpoints
-  behind auth and rate-limit the public read endpoints.
-- **Clustering** — at national zoom levels with the full dataset, client-side
-  clustering (ArcGIS `FeatureReductionCluster`) would keep rendering smooth
-  past a few thousand points.
-- **Caching** — `/api/incidents/stats` recomputes on every request; for a
-  slower-changing dataset this is a good Redis-cache candidate.
-- **Bundle size** — the production build flags `@arcgis/core` as a large
-  chunk; code-splitting the map view behind `React.lazy` would improve
-  first-paint on slower connections.
-- **Tests** — unit tests for `buildWhereClause` (the shared filter logic) and
-  an integration test hitting a test database would be the first additions.
 
 ## Tech stack
 
