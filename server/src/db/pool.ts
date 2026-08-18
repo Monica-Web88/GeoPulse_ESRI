@@ -9,6 +9,9 @@ export const pool = new Pool({
   database: process.env.PGDATABASE || "geopulse",
   user: process.env.PGUSER || "postgres",
   password: process.env.PGPASSWORD || "postgres",
+   ssl: {
+    rejectUnauthorized: false,
+  },
   max: 10,
   idleTimeoutMillis: 30000,
 });
