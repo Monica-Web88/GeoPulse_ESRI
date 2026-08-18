@@ -41,7 +41,7 @@ the **Calcite Design System**, **React + TypeScript**, REST API design, and
 - **Database** — a single, indexed `wildfire_incidents` table in PostgreSQL,
   seeded from NIFC's real public wildfire dataset (see below).
 
-## The data-sync architecture (the part worth discussing in an interview)
+## The data-sync architecture 
 
 The chart panel doesn't just mirror the filter sidebar — it reflects **exactly
 what's currently drawn inside the map's viewport**, including after a pan or
