@@ -8,7 +8,7 @@ update live as you pan and zoom, and click any incident for full detail.
 the **Calcite Design System**, **React + TypeScript**, REST API design, and
 **PostgreSQL**.
 
-![GeoPulse screenshot](docs/screenshot.png)
+![GeoPulse screenshot](docs/geopulse_home.png)
 
 ## Live demo
 
