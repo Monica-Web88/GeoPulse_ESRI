@@ -8,11 +8,11 @@ update live as you pan and zoom, and click any incident for full detail.
 the **Calcite Design System**, **React + TypeScript**, REST API design, and
 **PostgreSQL**.
 
-![GeoPulse screenshot placeholder](docs/screenshot.png)
+![GeoPulse screenshot](docs/screenshot.png)
 
 ## Live demo
 
-`[ADD YOUR DEPLOYED URL HERE ONCE HOSTED]`
+https://geo-pulse-esri.vercel.app/
 
 ## Architecture
 
